@@ -1,0 +1,1 @@
+{"id_transacao": "TX-9988", "cliente": "Gabriel Saes", "valor": 15000.00, "status": "APROVADO"}
