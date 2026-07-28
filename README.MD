@@ -5,13 +5,13 @@
 ![Vault Technology](https://img.shields.io/badge/Vault-SoftHSMv2-orange?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-brightgreen?style=for-the-badge)
 
-> **Projeto prático de arquitetura de segurança simulando o ciclo de vida completo e a gestão de chaves em um Hardware Security Module (HSM) corporativo via padrão industrial PKCS#11 em Python.**
+> **Projeto prático de arquitetura de segurança simulando o ciclo de vida e a gestão de chaves em um Hardware Security Module (HSM) corporativo via padrão industrial PKCS#11 em Python.**
 
 ---
 
 ## 📌 Visão Geral & Problema de Cibersegurança
 
-Armazenar chaves privadas de criptografia em arquivos de configuração (`.env`), banco de dados ou variáveis de ambiente expõe aplicações a ataques de exfiltração de dados em memória RAM ou vazamento de código fonte.
+Armazenar chaves privadas de criptografia em arquivos de configuração (`.env`), banco de dados ou variáveis de ambiente expõe aplicações a ataques de exfiltração de dados em memória ou vazamento de código fonte.
 
 ### A Solução por HSM
 Em infraestruturas bancárias, Open Finance e PKI corporativas, o **HSM (Hardware Security Module)** é utilizado para isolar o ciclo de vida das chaves:
@@ -31,7 +31,6 @@ O laboratório é desacoplado em **3 scripts independentes**, simulando a separa
   Cerimônia de Chaves             Gera 'documento.txt'               Validação e Auditoria
   (RSA-2048 com                   e obtém a assinatura               via Chave Pública no
    EXTRACTABLE: False)            'documento.sig' via HSM            cofre criptográfico
-
 
    1_criar_chave.py → Inicializa um par de chaves RSA-2048 no HSM com EXTRACTABLE=False.
 
