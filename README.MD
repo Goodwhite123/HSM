@@ -89,10 +89,13 @@ O laboratório é desacoplado em **3 scripts independentes**, simulando a separa
         bash
 
         # 1. Gera o par de chaves no cofre
+
         python3 1_criar_chave.py
 
         # 2. Cria o arquivo e gera a assinatura
+
         python3 2_assinar_documento.py
 
         # 3. Verifica a autenticidade
+        
         python3 3_verificar_assinatura.py
