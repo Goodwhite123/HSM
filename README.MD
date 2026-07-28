@@ -86,6 +86,7 @@ O laboratório é desacoplado em **3 scripts independentes**, simulando a separa
 
 
     ▶️ Execução
+    
         bash
 
         # 1. Gera o par de chaves no cofre
@@ -97,5 +98,5 @@ O laboratório é desacoplado em **3 scripts independentes**, simulando a separa
         python3 2_assinar_documento.py
 
         # 3. Verifica a autenticidade
-        
+
         python3 3_verificar_assinatura.py
